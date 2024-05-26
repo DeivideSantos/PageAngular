@@ -1,0 +1,189 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Roboto", sans-serif;
+    padding: 0 70px;
+    
+    span {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--second-color-text);
+    }
+    
+    h1 {
+        font-size: 72px;
+        font-weight: 900;
+        color: var(--first-color-text);
+    }
+    
+
+}
+
+.benefit-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 70px;
+    gap: 70px;
+
+    .befenit-data {
+        border-bottom: 10px solid var(--second-color);
+        padding-bottom: 30px;
+        h2 {
+            font-size: 60px;
+            font-weight: 600;
+            font-family: "Roboto", sans-serif;
+            
+        }
+    
+    }
+
+    p {
+        font-size: 40px;
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    b{
+        background: 
+        -webkit-linear-gradient(180deg, var(--light-color), var(--second-color-text));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-style: normal;
+    }
+
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .redeEletrica {
+
+        padding: 30px 70px;
+        h4 {
+            font-size: 32px;
+            font-weight: bold;
+
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+
+        }
+    }
+
+    .energiarenovavel{
+        h4 {
+            font-size: 32px;
+            font-weight: bold;
+
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+
+        }
+
+    }
+}
+
+.endSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+    .act-solicitation {
+        h1 {
+            font-weight: bold;
+            font-size: 45px;
+            text-align: center;
+            padding: 30px 70px;
+            
+        }
+    }
+
+}
+
+.redesSection {
+
+    .logo {
+        
+    display: flex;
+    
+    padding: 30px 70px;
+    position: absolute;
+    top: 1;
+    left: 0;
+
+    }
+
+    .containerLogo {
+        display: flex;
+        flex-direction: row;
+        padding: 30px 70px;
+        top: 1;
+        justify-content: right;
+
+        .face{
+            padding: 0 20px;
+        }
+
+        .insta { 
+            padding: 0 20px;
+        }
+
+        .x {
+            padding-left: 30px;
+        }
+    }
+
+
+
+
+
+}
+
+
+@media (min-width: 1080px) {
+    .main-section {
+        flex-direction: row;
+    }
+
+    .benefit-section {
+        flex-direction: row;
+    }
+
+    .info-section {
+        flex-direction: row;
+    }
+
+    .redesSection {
+        flex-direction: row;
+    }
+
+}

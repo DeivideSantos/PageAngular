@@ -1,0 +1,24 @@
+<section class="form-section">
+    <div class="text">
+        <h3>
+            Fique por dentro das novidades!
+        </h3>
+
+        <p>A energia elétrica é uma das formas de energia mais versáteis e amplamente utilizadas no mundo moderno. Sua finalidade abrange uma vasta gama de aplicações que facilitam o dia a dia, impulsionam a indústria e promovem o avanço tecnológico.
+
+    </div>
+
+    <form [formGroup]="newsletterForms">
+        <label for="name">Nome</label>
+        <input id="name" formControlName="name">
+
+        <label for="email">E-mail</label>
+        <input id="email" formControlName="email">
+    
+        <app-btn-primary 
+        btn-text="Se inscreva" 
+        variant="secondary" 
+        (submit)="onSubmit()"
+        [disable]="!newsletterForms.valid"></app-btn-primary>
+    </form>
+</section>
